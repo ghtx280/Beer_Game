@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+
+.content {
+  display: flex;
+  min-height: calc(100vh - 60px);
+  flex-direction: column;
+  flex-basis: calc(100vw - 40px);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #FFEFA5;
+  ;
+  height: 50px;
+  margin-top: 10px;
+}
+
+main {
+  border-radius: 10px;
+  background: #F1F1F1 url('fon.png') no-repeat center;
+  background-size: 200px;
+  flex: 1;
+  overflow: hidden;
+  margin: 10px 0px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #FFEFA5;
+  ;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-family: 'Rowdies';
+  font-size: 32px;
+
+  color: #B46C27;
+}
+
+.beer-max {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beer-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beer-now p,
+.beer-max p {
+  font-family: Rowdies;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #B46C27;
+  margin-left: 5px;
+}
+
+@media (min-width: 800px) {
+  .content {
+    min-height: 100vh;
+    flex-basis: 500px;
+  }
+}
+
+.beer {
+  position: relative;
+  top: -100px;
+  padding-top: 20px;
+}
